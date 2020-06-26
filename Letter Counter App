@@ -1,0 +1,11 @@
+print("Welcome to The Letter Counter App")
+#Gets The Users Name
+name = input("\nWhat is your name? ").title().strip()
+print("Hello, " + name + "!\n" )
+print("I will count the number of times a specific letter occurs in your message.\n")
+#Counts the Letters within a message
+message = input("Please enter a message: ")
+letter_finder = input("Which letter would you like to count the occurence of?")
+#Returns the amount of letters that are within the message
+amountoftimes = message.count(letter_finder)
+print(f"{name} your message has {amountoftimes} {letter_finder} 's in it.")
