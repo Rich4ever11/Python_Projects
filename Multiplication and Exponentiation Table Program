@@ -1,0 +1,21 @@
+print("Welcome to The Multiplication/Exponentiation Table App")
+
+name = input("Hello, what is your name: ").title().split()
+number = float(input("What number would you like to work with: "))
+
+print(f"Multiplication Table for {number}\n")
+for numbers in range(1, 10):
+  numbers = float(numbers)
+  value = (number * numbers)
+  print(f"\t\t{numbers} * {number} = {value}")
+print(f"\nExponent Table for {number}\n")
+for numbers in range(1, 10):
+  numbers = float(numbers)
+  value = (number ** numbers)
+  print(f"\t\t{number} ** {numbers} = {value}")
+print()
+message = (name[0] + ", Math is cool")
+print(message)
+print("\t" + message.lower())
+print("\t\t" + message.title())
+print("\t\t\t" + message.upper())
