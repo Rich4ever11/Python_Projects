@@ -1,0 +1,29 @@
+print("Welcome to the Temprature Conversion Program")
+
+typeofconversion = (input("\nWhat Conversion of temprature would you like to convert Fahrenheit, Celcius or Kelvin: "))
+
+Temprature = float(input(f"\nWhat is the given temprature in degrees {typeofconversion}:"))
+if typeofconversion == "Fahrenheit":
+  print(f"Degrees in Fahrenheit:\t{Temprature}")
+  Celcius = (Temprature - 32) * 5/9
+  Celcius = round(Celcius, 4)
+  print(f"Degrees in Celcius:\t{Celcius}")
+  Kelvin = (Temprature - 32) * 5/9 + 273.15
+  Kelvin = round(Kelvin, 4)
+  print(f"Degrees in Kelvin:\t{Kelvin}")
+elif typeofconversion == "Celcius":
+  print(f"Degrees in Celcius:\t{Temprature}")
+  Fahrenheit = (Temprature * 9/5) + 32
+  Fahrenheit = round(Fahrenheit, 4)
+  print(f"Degrees in Fahrenheit:\t{Fahrenheit}")
+  Kelvin = Temprature + 273.15
+  Kelvin = round(Kelvin, 4)
+  print(f"Degrees in Kelvin:\t{Kelvin}")
+elif typeofconversion == "Kelvin":
+  print(f"Degrees in Kelvin:\t{Temprature}")
+  Fahrenheit = (Temprature - 273.15) * 9/5 + 32
+  Fahrenheit = round(Fahrenheit, 4)
+  print(f"Degrees in Fahrenheit:\t{Fahrenheit}")
+  Celcius = Temprature - 273.15
+  Celcius = round(Celcius, 4)
+  print(f"Degrees in Celcius:\t{Celcius}")
