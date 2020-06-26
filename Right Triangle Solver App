@@ -1,0 +1,14 @@
+import math
+print("Welcome to The Right Triangle Solver App")
+
+SideoneofTriangle = float(input("\nWhat is the first side of the triangle: "))
+SidetwoofTriangle = float(input("\nWhat is the second side of the triangle: "))
+
+ThirdSide = math.sqrt(SideoneofTriangle ** 2 + SidetwoofTriangle ** 2)
+ThirdSide = round(ThirdSide, 3)
+
+Area = (SideoneofTriangle * SidetwoofTriangle) / 2
+Area = round(Area, 3)
+print()
+print(f"For a triangle with legs of {SideoneofTriangle} and {SidetwoofTriangle} the hypotenuse is {ThirdSide}")
+print(f"For a triangle with legs of {SideoneofTriangle} and {SidetwoofTriangle} the area is {Area}")
